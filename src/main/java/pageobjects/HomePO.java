@@ -10,9 +10,10 @@ public class HomePO extends BasePageObject {
         super(driver);
     }
 
-    public void searchQuery(String searchStr) {
+    public SearchResultsPO searchQuery(String searchStr) {
         WebElement searchInput = driver.findElement(HomeLocator.SEARCH_INPUT.getPath());
         searchInput.sendKeys(searchStr);
         searchInput.submit();
+        return new SearchResultsPO(driver);
     }
 }
