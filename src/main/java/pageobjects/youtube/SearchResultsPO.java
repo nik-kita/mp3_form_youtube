@@ -1,6 +1,6 @@
-package pageobjects;
+package pageobjects.youtube;
 
-import locators.SearchResultsLocator;
+import locators.youtube.SearchResultsLocator;
 import org.openqa.selenium.WebDriver;
 
 public class SearchResultsPO extends BasePageObject {

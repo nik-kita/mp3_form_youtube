@@ -1,5 +1,6 @@
-package locators;
+package locators.youtube;
 
+import locators.Locator;
 import org.openqa.selenium.By;
 
 public enum PlayListLocator implements Locator {

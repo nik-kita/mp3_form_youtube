@@ -1,6 +1,6 @@
-package pageobjects;
+package pageobjects.youtube;
 
-import locators.HomeLocator;
+import locators.youtube.HomeLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
