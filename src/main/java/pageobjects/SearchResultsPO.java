@@ -12,4 +12,9 @@ public class SearchResultsPO extends BasePageObject {
         driver.findElement(SearchResultsLocator.PLAYLIST_FILTER_BUTTON.getPath()).click();
         return this;
     }
+
+    public PlayListPO getPlayList() {
+        driver.findElement(SearchResultsLocator.RESULT_PLAYLIST_TYPE.getPath()).click();
+        return new PlayListPO(driver);
+    }
 }
