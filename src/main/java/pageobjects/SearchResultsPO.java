@@ -9,6 +9,7 @@ public class SearchResultsPO extends BasePageObject {
     }
 
     public SearchResultsPO addPlaylistFilter() {
+        driver.findElement(SearchResultsLocator.FILTERS.getPath()).click();
         driver.findElement(SearchResultsLocator.PLAYLIST_FILTER_BUTTON.getPath()).click();
         return this;
     }

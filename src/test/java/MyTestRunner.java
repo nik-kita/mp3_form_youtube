@@ -11,6 +11,7 @@ public abstract class MyTestRunner {
     public void settingDriver() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get("https://www.youtube.com/");
     }
 
