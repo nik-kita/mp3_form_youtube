@@ -2,7 +2,6 @@ package pageobjects;
 
 import locators.SearchResultsLocator;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class SearchResultsPO extends BasePageObject {
     public SearchResultsPO(WebDriver driver) {
