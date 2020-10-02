@@ -3,6 +3,7 @@ package pageobjects.youtube;
 import locators.youtube.HomeLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import pageobjects.BasePageObject;
 
 public class HomePO extends BasePageObject {
 

@@ -1,7 +1,7 @@
 package pageobjects.youtube;
 
 import org.openqa.selenium.WebDriver;
-import pageobjects.youtube.BasePageObject;
+import pageobjects.BasePageObject;
 
 public class VideoPO extends BasePageObject {
     public VideoPO(WebDriver driver) {

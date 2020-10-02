@@ -2,6 +2,7 @@ package pageobjects.youtube;
 
 import locators.youtube.SearchResultsLocator;
 import org.openqa.selenium.WebDriver;
+import pageobjects.BasePageObject;
 
 public class SearchResultsPO extends BasePageObject {
     public SearchResultsPO(WebDriver driver) {
