@@ -3,7 +3,7 @@ package locators.downloader;
 import locators.Locator;
 import org.openqa.selenium.By;
 
-public enum ConverterLocator implements Locator {
+public enum HomeMp3Locator implements Locator {
     INPUT_FOR_URL(By.cssSelector("input[name='url']")),
 
 
@@ -11,7 +11,7 @@ public enum ConverterLocator implements Locator {
 
     private By path;
 
-    ConverterLocator(By path) {
+    HomeMp3Locator(By path) {
         this.path = path;
     }
 

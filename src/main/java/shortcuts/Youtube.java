@@ -1,7 +1,7 @@
 package shortcuts;
 
 import org.openqa.selenium.WebDriver;
-import pageobjects.youtube.HomePO;
+import pageobjects.youtube.HomeYouPO;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ public class Youtube {
 
     public static List<String> getAllUrlsFromPlaylistSearchingBy(String query, WebDriver driver) {
         return
-        new HomePO(driver)
+        new HomeYouPO(driver)
                 .searchQuery(query)
                 .addPlaylistFilter()
                 .getPlayList()

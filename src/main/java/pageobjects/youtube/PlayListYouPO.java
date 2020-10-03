@@ -10,10 +10,10 @@ import pageobjects.BasePageObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlayListPO extends BasePageObject {
+public class PlayListYouPO extends BasePageObject {
     List<String> allVideosUrls;
 
-    public PlayListPO(WebDriver driver) {
+    public PlayListYouPO(WebDriver driver) {
         super(driver);
     }
 
