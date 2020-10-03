@@ -12,11 +12,10 @@ public abstract class MyTestRunner {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.youtube.com/");
     }
 
-    @AfterClass
-    public void destroyDriver() {
-        driver.quit();
-    }
+//    @AfterClass
+//    public void destroyDriver() {
+//        driver.quit();
+//    }
 }

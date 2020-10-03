@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public enum HomeMp3Locator implements Locator {
     INPUT_FOR_URL(By.cssSelector("input[name='url']")),
-
+    SUBMIT_BUTTON(By.cssSelector("button[type='submit']"))
 
     ;
 
