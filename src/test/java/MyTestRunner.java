@@ -2,6 +2,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -11,13 +13,14 @@ public abstract class MyTestRunner {
 
     @BeforeClass
     public void settingDriver() {
-        WebDriverManager.chromedriver().setup();
-        ChromeOptions options = null;
-        options = new ChromeOptions();options.addArguments("--headless");
+        WebDriverManager.firefoxdriver().setup();
+        FirefoxOptions options = null;
+        options = new FirefoxOptions();
+        options.addArguments("--headless");
         if (withOptions) {
-            driver = new ChromeDriver(options);
+            driver = new FirefoxDriver(options);
         } else {
-            driver = new ChromeDriver();
+            driver = new FirefoxDriver();
         }
         driver.manage().window().maximize();
     }
