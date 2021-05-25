@@ -1,4 +1,4 @@
-package pageobjects.youtube;
+package pageobjects;
 
 import org.openqa.selenium.WebDriver;
 

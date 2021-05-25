@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public enum SearchResultsLocator implements Locator {
     FILTERS(By.cssSelector("ytd-toggle-button-renderer a")),
-    PLAYLIST_FILTER_BUTTON(By.cssSelector("a[href='/results?search_query=laravel&sp=EgIQAw%253D%253D']")),
+    PLAYLIST_FILTER_BUTTON(By.xpath("//yt-formatted-string[contains(text(), 'Playlist')]")),
     RESULT_PLAYLIST_TYPE(By.cssSelector("ytd-playlist-thumbnail")),
 
     ;
